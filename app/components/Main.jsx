@@ -17,9 +17,15 @@ const Main = (props) => {
   return(
             <div>
                 <Nav/>
-                <h2>Main Component!</h2>
-                {props.children}
+                <div className="grid-container">
+                  <div className="grid-x grid-padding-x">
+                    <div className="medium-6 large-6 large-offset-3 medium-offset-3 cell">
+                      {props.children}
+                    </div> 
+                  </div>
+                </div>
             </div>
+
         );
 }
 
